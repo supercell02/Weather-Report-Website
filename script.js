@@ -10,7 +10,7 @@ const getWeather =(city) =>{
     cityName.innerHTML = city
 	lang="EN";
 fetch(
-  "https://open-weather13.p.rapidapi.com/city/" + city,lang)
+  "https://open-weather13.p.rapidapi.com/city/" + city+"/"+lang)
   .then((response) => response.json())
   .then((response) => {
     console.log(response);
